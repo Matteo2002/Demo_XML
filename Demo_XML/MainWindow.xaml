@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="186*"/>
+            <RowDefinition Height="233*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF0B77E2" Offset="0.017"/>
+                <GradientStop Color="#FF04F4FF" Offset="0.63"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="Btn_Aggiorna" Content="Visualizza dati" HorizontalAlignment="Left" Height="37" Margin="107,104,0,0" VerticalAlignment="Top" Width="192" Click="Btn_Aggiorna_Click"/>
+        <ListBox x:Name="Lst_Persone" HorizontalAlignment="Left" Height="247" Margin="399,86,0,0" VerticalAlignment="Top" Width="364" Grid.RowSpan="2"/>
+        <Button x:Name="Btn_Stop" Content="STOP" HorizontalAlignment="Left" Height="37" Margin="107,80,0,0" VerticalAlignment="Top" Width="192" Grid.Row="1" Background="#FFFF0808" Click="Btn_Stop_Click"/>
+        <Label Content="DEMO-XML" HorizontalAlignment="Left" Height="48" Margin="330,10,0,0" VerticalAlignment="Top" Width="142" FontSize="24"/>
+
     </Grid>
 </Window>
